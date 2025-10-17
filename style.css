@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgba(248, 249, 255, 1);
+  margin: 0 auto;
+  max-width: 1440px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  & .left {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font: 400 21px "Poppins";
+    & span {
+      font-weight: 700;
+    }
+  }
+  & .right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font: 600 16px "Poppins";
+    & .first {
+      color: rgba(0, 147, 121, 1);
+    }
+    & p:nth-of-type(2) {
+      color: rgba(0, 147, 121, 1);
+      background-color: rgba(229, 244, 242, 1);
+      border-radius: 20px;
+      padding: 16px 50px;
+    }
+    & div {
+      display: flex;
+      gap: 2px;
+      background-color: rgba(0, 147, 121, 1);
+      border-radius: 20px;
+      color: rgba(255, 255, 255, 1);
+      padding: 16px 50px;
+      font: 600 16px 'Poppins';
+      & p {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+main {
+  & .preview {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin-top: 120px;
+    & .left {
+      max-width: 648px;
+      & h1 {
+        font: 700 67px "Poppins";
+        color: rgba(45, 45, 45, 1);
+      }
+      & p {
+        font: 400 21px "Mulish";
+        color: rgba(45, 45, 45, 1);
+        margin: 20px 0;
+      }
+      & .wrapper {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        & div {
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 20px;
+            padding: 16px 50px;
+            border: 1px solid rgba(0, 147, 121, 1);
+            display: flex;
+            align-items: center;
+            & p{
+                color: rgba(0, 147, 121, 1);
+                margin: 0;
+            }
+        }
+        & div:hover{
+            background-color: rgba(0, 147, 121, 1);
+            & p{
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+      }
+    }
+  }
+  & .partners{
+    text-align: center;
+    margin: 50px 0;
+    display: none;
+  }
+    
+}
+@media (max-width:1131px) {
+    .preview .right{
+        width: 400px;
+    }
+    .preview .left h1{
+        font-size: 30px;
+    }
+}
